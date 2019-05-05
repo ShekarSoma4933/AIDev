@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>NAB | SignIn</title>
+<link rel="icon" th:href="@{/img/nab-logo.jpg}"
+	href="../img/nab-logo.jpg" />
+<link rel="stylesheet" th:href="@{/css/at.css}"
+	href="../css/at.css" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+	integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+	crossorigin="anonymous" />
+<script src="/js/lib/jquery.min.js" th:src="@{/js/lib/jquery.min.js}"></script>
+<script src="/js/index.js" th:src="@{/js/index.js}"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<img src="../img/sticky-nav-logo.jpg" th:href="@{/img/sticky-nav-logo.jpg}" alt="" />
+			</div>
+			<nav>
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Help</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="sidebar">
+		<div class="toggle-btn" onclick="toggleSidebar()">
+			<span></span> <span></span> <span></span>
+		</div>
+		<ul>
+			<li><a>File To File</a></li>
+			<hr>
+			<li><a>File To DataBase</a></li>
+			<hr>
+			<li><a>Table To Table</a></li>
+			<hr>
+			<li><a>Report To DataBase</a></li>
+			<hr>
+		</ul>
+	</div>
+</body>
+<!-- <footer>
+		<p>© National Australia Bank Limited.</p>
+</footer>-->
+</html>

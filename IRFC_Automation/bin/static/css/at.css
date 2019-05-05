@@ -1,0 +1,241 @@
+@import
+	"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	;
+
+
+#sidebar {
+	
+	position:fixed;
+	font-size:16px;
+	width: 230px;
+	height: 100%;
+	background: #a31315;
+	left:-230px;
+	transition:all 500ms linear; 
+}
+
+#sidebar.active{
+	left:0px;
+}
+
+#sidebar ul li {
+	color: rgba(230, 230, 230, 0.9);
+	list-style: none;
+	padding: 15px;
+	border-bottom: rgba(100, 100, 100, 0.3);
+}
+
+#sidebar ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+#sidebar ul li a:hover {
+	cursor: pointer;
+	
+}
+#sidebar ul li ul li {
+	width: 100px;
+	display: none;
+}
+
+#sidebar ul li:hover ul li {
+	display: block;
+}
+
+#sidebar .toggle-btn {
+	position: absolute;
+	left: 245px;
+	top: 10px;
+}
+
+#sidebar .toggle-btn span{
+	display:block;
+	width:30px;
+	height:5px;
+	background:#151719;
+	margin:3px 0px;
+}
+
+body {
+	font-family: monospace;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0px;
+	margin: 0px;
+	background-color: #ffffff;
+}
+/* Global */
+.container {
+	width: 80%;
+	margin: auto;
+	over-flow: hidden;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.btn {
+	height: 40px;
+	background: #a31315;
+	border: 0;
+	border-radius: 4px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+	font-size: 18px;
+}
+
+.dark {
+	padding: 70px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #ffffff;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* header */
+header {
+	background: black;
+	color: #ffffff;
+	padding-top: 10px;
+	min-height: 60px;
+	border-bottom: #ffffff 1px solid;
+}
+
+header a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #branding img {
+	width: 156px;
+	margin-top: -16px;
+	margin-left:-60px;
+}
+
+header #branding {
+	float: left;
+}
+
+header #branding h1 {
+	margin: 0;
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header a:hover {
+	color: #cccccc;
+	font-weight: bold;
+}
+
+/* Show Form */
+#showform {
+	min-height: 600px;
+}
+
+#showform form {
+	float: right;
+	margin-top: 50px;
+	margin-right: 10px;
+}
+
+section table {
+	float: left;
+}
+
+section {
+	display: block;
+	width: 100%;
+	height: 70px;
+	overflow: scroll;
+}
+
+.dataTables_wrapper {
+	bottom: 312px;
+}
+
+.textbox {
+	width: 110%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 1px solid #ca0d0dd1;
+}
+
+::placeholder {
+	color: #ffffff;
+}
+
+.textbox i {
+	width: 26px;
+	float: left;
+	text-align: center;
+}
+
+.textbox input {
+	border: 0;
+	outline: none;
+	background: none;
+	color: #ffffff;
+	font-size: 18px;
+	width: 80%;
+	float: left;
+	margin-right: 10px;
+}
+
+footer {
+	padding: 10px;
+	margin-bottom: 50px;
+	color: #ffffff;
+	background-color: #a31315;
+	text-align: center;
+}
+
+.container ul li {
+	float: left;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-family: monospace;
+	font-size: 20px;
+	margin-right: 4px;
+	color: white;
+}
+
+.container ul li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+.container ul li a:hover {
+	background-color: #a31315;
+	cursor: pointer;
+}
+
+.container ul li ul li {
+	width: 100px;
+	display: none;
+}
+
+.container ul li:hover ul li {
+	display: block;
+}
