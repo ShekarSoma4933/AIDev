@@ -23,8 +23,8 @@
 			</div>
 			<nav>
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">About</a></li>
+					<!--  <li><a href="">Home</a></li>
+					<li><a href="">About</a></li>-->
 					<li><a href="">Help</a></li>
 				</ul>
 			</nav>
@@ -35,6 +35,8 @@
 			<span></span> <span></span> <span></span>
 		</div>
 		<ul>
+			<li><a>Home</a></li>
+			<hr>
 			<li><a>File To File</a></li>
 			<hr>
 			<li><a>File To DataBase</a></li>
@@ -45,6 +47,35 @@
 			<hr>
 		</ul>
 	</div>
+	
+	 <section id="showform">
+        <div class="container" id="uploadForm">
+          <form method="POST" enctype="multipart/form-data" id="fileUploadForm">
+          <div class="dark">
+                <h1>File To File Validation</h1>
+				<div class="col-sm-5" style="margin-top: 36px;">
+					<div class="form-group">
+						<input type="file" class="form-control" style="font-size:15px;" id="uploadfile1" placeholder="Upload File" value="" name="uploadfile1"></input>
+					</div>
+					<br/>
+			        <button type="submit" style="font-family: monospace;font-size: 15px;" class="btn" id="btnSubmit1">Upload</button>
+			        <button type="button" style="font-family: monospace;font-size: 15px;" class="btn" id="btnGetFiles1">Files</button>
+            </div>
+            <div class="col-sm-5" style="margin-top:0px;">
+					<div class="form-group">
+						<input type="file" class="form-control" style="font-size:15px;" id="uploadfile2" placeholder="Upload File" value="" name="uploadfile2"></input>
+					</div>
+					<br/>
+			        <button type="submit" style="font-family: monospace;font-size: 15px;" class="btn" id="btnSubmit1">Upload</button>
+			        <button type="button" style="font-family: monospace;font-size: 15px;" class="btn" id="btnGetFiles1">Files</button>
+            </div> 
+            </div>
+          </form>
+		 </div>
+     </section>
+	
+	
+	
 </body>
 <!-- <footer>
 		<p>© National Australia Bank Limited.</p>
